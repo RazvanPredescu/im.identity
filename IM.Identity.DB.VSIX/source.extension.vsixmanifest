@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="IM.Identity.DB.VSIX..1ab57174-6cc6-4813-8c71-370f25adb557" Version="1.0" Language="en-US" Publisher="Razvan Predescu" />
+    <DisplayName>IM Identity 2.0 SQL Project</DisplayName>
+    <Description xml:space="preserve">SQL project used to create the complete table structure for Microsoft Identity 2.0.</Description>
+    <MoreInfo>https://github.com/RazvanPredescu/im.identity</MoreInfo>
+    <License>LICENSE.txt</License>
+    <Tags>SQL Project, Microsoft Identity 2.0</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="IM.Identity.DB.Template" d:TargetPath="|IM.Identity.DB.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+  </Assets>
+</PackageManifest>

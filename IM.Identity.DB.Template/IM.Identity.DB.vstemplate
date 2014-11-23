@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>IM.Identity.DB</Name>
+    <Description>SQL project used to create the complete table structure for Microsoft Identity 2.0</Description>
+    <ProjectType>SQLDB</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Identity.DB</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.sqlproj" File="IM.Identity.DB.sqlproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties" />
+      <Folder Name="Publish" TargetFolderName="Publish">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IM.Identity.DB.Local.publish.xml">IM.Identity.DB.Local.publish.xml</ProjectItem>
+      </Folder>
+      <Folder Name="Schema" TargetFolderName="Schema" />
+<!--      <Folder Name="Scripts" TargetFolderName="Scripts">-->
+<!--        <ProjectItem ReplaceParameters="true" TargetFileName="PostDeployment.sql">PostDeployment.sql</ProjectItem>-->
+<!--        <ProjectItem ReplaceParameters="true" TargetFileName="Principal.sql">Principal.sql</ProjectItem>-->
+<!--      </Folder>-->
+      <Folder Name="Tables" TargetFolderName="Tables">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AspNetRoles.sql">AspNetRoles.sql</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AspNetUserClaims.sql">AspNetUserClaims.sql</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AspNetUserLogins.sql">AspNetUserLogins.sql</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AspNetUserRoles.sql">AspNetUserRoles.sql</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AspNetUsers.sql">AspNetUsers.sql</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
