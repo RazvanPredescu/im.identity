@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IM.Identity.DB", "IM.Identity.DB.sqlproj", "{C77AFCBD-25B7-4500-92DC-1248EDD6A89E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IM.Identity.DB.VSIX", "IM.Identity.DB.VSIX\IM.Identity.DB.VSIX.csproj", "{DDCDAA3B-6351-42A3-AABE-5EDC2F4FABAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IM.Identity.DB.Template", "IM.Identity.DB.Template\IM.Identity.DB.Template.csproj", "{6A6F4CAE-204D-48DD-A4CA-8C815AFDB8CA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IM.Identity.DB", "IM.Identity.DB\IM.Identity.DB.sqlproj", "{C77AFCBD-25B7-4500-92DC-1248EDD6A89E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +15,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDCDAA3B-6351-42A3-AABE-5EDC2F4FABAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCDAA3B-6351-42A3-AABE-5EDC2F4FABAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCDAA3B-6351-42A3-AABE-5EDC2F4FABAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCDAA3B-6351-42A3-AABE-5EDC2F4FABAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6F4CAE-204D-48DD-A4CA-8C815AFDB8CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6F4CAE-204D-48DD-A4CA-8C815AFDB8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6F4CAE-204D-48DD-A4CA-8C815AFDB8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6F4CAE-204D-48DD-A4CA-8C815AFDB8CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C77AFCBD-25B7-4500-92DC-1248EDD6A89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C77AFCBD-25B7-4500-92DC-1248EDD6A89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C77AFCBD-25B7-4500-92DC-1248EDD6A89E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
